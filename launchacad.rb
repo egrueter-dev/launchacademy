@@ -36,22 +36,22 @@
 
 
 
-# Grandma problem <<<<<<<<
+Grandma problem <<<<<<<<
 
 
-# puts "Say Something to Grandma"
-# bye = 0
+puts "Say Something to Grandma"
+bye = 0
 
-# while bye < 3
-# 	reply = gets.chomp
-# 	if reply == "BYE"
-# 		bye += 1
-# 	elsif reply == reply.upcase #condition, not variable 
-# 		puts "No, not since #{rand(1930..1950)}"
-# 	else
-# 		puts "What?????"
-# 	end
-# end
+while bye < 3
+	reply = gets.chomp
+	if reply == "BYE"
+		bye += 1
+	elsif reply == reply.upcase #condition, not variable 
+		puts "No, not since #{rand(1930..1950)}"
+	else
+		puts "What?????"
+	end
+end
 
 
 # def english_number english_number
