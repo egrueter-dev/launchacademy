@@ -1,44 +1,22 @@
 
 
-#procedural
+#How can I reduce this??
 
-# n = 99
-# while n != 0
-#   puts "#{n} Bottles of beer on the wall, #{n} bottles of beer, you take one down, pass it around #{n-1} bottles of beer on the wall"
-#   n -= 1
-# end
+bottles = 10
 
-
-#object oriented version...sort of..
-#but too much in one method...
-
-#
-#   def song(bottle,number)
-#     while number != 0
-#          puts "#{number} Bottles of #{bottle} on the wall, #{number} bottles of #{bottle}, you take one down, pass it around #{number-1} bottles of #{bottle} on the wall"
-#          number -= 1
-#     end
-#   end
-#
-# puts song('wine', 18)
-#
-
-#another object oriented version using classes.....
-
-class Song
-
-  def booze (bottle, number)
-    @bottle = bottle
-    @number = number
+while bottles > 0
+  if bottles % 10 == 0
+   puts "#{bottles} bottles of beer on the wall, #{bottles} bottles of beer!
+   take one down, pass it around #{bottles -1} bottles of beer on the wall"
+  elsif bottles > 2
+   puts "#{bottles} bottles of beer on the wall, #{bottles} bottles of beer,
+   take one down, pass it around #{bottles -1} bottles of beer on the wall"
+  elsif bottles == 2
+   puts "#{bottles} bottles of beer on the wall, #{bottles} bottles of beer,
+   take one down, pass it around #{bottles -1} bottle of beer on the wall"
+  else bottles == 1
+   puts "#{bottles} bottle of beer on the wall, #{bottles} bottle of beer,
+   take one down, pass it around no more bottles of beer on the wall!"
   end
-
-  def sing
-    while number != 0
-      puts "#{number} Bottles of #{bottle} on the wall, #{number} bottles of #{bottle}, you take one down, pass it around #{number-1} bottles of #{bottle} on the wall"
-      number -= 1
-    end
-  end
+  bottles -= 1
 end
-
-99bottles = Song.new('wine', 18)
-99bottles.sing
